@@ -1,36 +1,28 @@
 <template>
 <div >
 <Nav />
-
-
-     
-<div>
-
- <v-layout>
-   
+<div style="margin:auto">
+ <v-layout >
     <v-flex xs12 sm6 offset-sm3>
       <v-card 
     max-width="1000"
     height="400">
-        
-       
-
-        <v-card-title primary-title>
+        <v-card-title primary-title>Profile
           <v-container>
       <v-row>
-
         <v-col cols="12" sm="6" md="3">
           <v-text-field
             label="Name"
           ></v-text-field>
         </v-col>
-       
+        <v-col cols="12" sm="6" md="3">
+        <v-img src="../store/profile.jpg"></v-img>
+        </v-col>
         <v-col cols="12" sm="6" md="3">
           <v-text-field
             label="Tell"
           ></v-text-field>
         </v-col>
-
         <v-col cols="12" sm="6" md="3">
           <v-text-field
             label="Hospital"

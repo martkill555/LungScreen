@@ -2,13 +2,11 @@
 <div >
 <Nav />
 
-
-     
-
    <v-card
     class="mx-auto"
-    width="1500"
+    width="1600"
     height="1500"
+    style="margin:auto"
   >
     
 
@@ -134,7 +132,7 @@
     <v-card
     class="mx-auto"
      width="1500"
-    height="500"
+    height="1500"
   >
     <v-img
       class="white--text align-end"
@@ -150,32 +148,6 @@
    <v-form>
     <v-container>
       <v-row>
-
-         <v-col cols="6" sm="3">
-          <v-text-field
-            v-model="first"
-            label="Name"
-            outlined
-          ></v-text-field>
-        </v-col>
-
-        <v-col cols="6" sm="3">
-          <v-text-field
-            v-model="last"
-            label="Case ID"
-            outlined
-          ></v-text-field>
-        </v-col>
-<v-col cols="6" sm="3">
-        <v-textarea
-          label="Detect"
-          auto-grow
-          outlined
-          rows="3"
-          row-height="25"
-          
-        ></v-textarea>
-      </v-col>
       <v-col cols="6" sm="3">
         <v-textarea
           label="Comment"
