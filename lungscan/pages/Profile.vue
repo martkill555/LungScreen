@@ -1,12 +1,13 @@
 <template>
 <div >
 <Nav />
-<div style="margin:auto">
+<div >
  <v-layout >
     <v-flex xs12 sm6 offset-sm3>
       <v-card 
     max-width="1000"
-    height="400">
+    height="400"
+     style="margin:auto">
         <v-card-title primary-title>Profile
           <v-container>
       <v-row>
@@ -43,7 +44,7 @@
         
 <nuxt-link to="/ProfileEdit"> <v-btn x-large color="#A32E2E" dark>Edit Profile</v-btn> </nuxt-link>
        
-      </v-card>
+      </v-card >
     </v-flex>
   </v-layout>
      <div class="my-2">
@@ -62,7 +63,6 @@
         </div>
       </v-col>
       </div>
-     
 </div>
 
 </template>

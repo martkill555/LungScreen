@@ -27,8 +27,8 @@
       <v-row dense>
        <v-card
     class="mx-auto"
-     max-width="1485"
-     max-height="500"
+     width="1485"
+     height="500"
     outlined
   >
     <!-- <v-list-item three-line>
