@@ -113,7 +113,7 @@
       Hospital: oyo 460 int place
   </v-card-subtitle>
     <v-card-actions>
-      <v-btn text>Edit profile</v-btn>
+      <nuxt-link to="/ProfileEdit"><v-btn text>Edit profile</v-btn></nuxt-link>
 
       <v-spacer></v-spacer>
 
