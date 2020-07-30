@@ -2,17 +2,45 @@
 <div >
 <Nav />
 
+<div>
+       <v-row >
+<v-col class="d-flex" cols="12" sm="6">
+<v-card
+    class="mx-auto"
+    max-width="400"
+    style="margin-left:200px"
+    outlined
+   
+  >
+    <v-list-item three-line>
+      <v-list-item-content>
+        <div class="overline mb-4 mx-auto">Profile</div>
+        <v-img src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t1.15752-9/90785475_555818048375458_3037732460386320384_n.jpg?_nc_cat=108&_nc_sid=b96e70&_nc_eui2=AeH4RzaWmmo4v3A88gdoss2sDc_lKpgOIMkNz-UqmA4gyQZ60FCa5qLjhSYscDRpljr883Jclh4BCCARVmrP0sKZ&_nc_ohc=baMSaF0-q14AX_x92yN&_nc_ht=scontent.fbkk10-1.fna&oh=cf66d09d54a80325e2b9db7047e0f50d&oe=5F469CAF"></v-img>
+        <v-list-item-title class="headline mb-1">Sarawut Rattanawichien</v-list-item-title>
+        <v-list-item-subtitle>Yed expert</v-list-item-subtitle>
+      </v-list-item-content>
 
-     
+      <v-list-item-avatar
+        tile
+        size="80"
+        color="grey"
+      ></v-list-item-avatar>
+    </v-list-item>
 
-    <v-btn color="#A32E2E" @click="$refs.inputUpload.click()" dark>Select new image</v-btn>
+    <v-card-actions>
+      <v-btn color="#A32E2E" @click="$refs.inputUpload.click()" dark>Select new image</v-btn>
 <input v-show="false" ref="inputUpload" type="file" @change="yourFunction" >
-      
+    </v-card-actions>
+  </v-card>
+  </v-col >
+
+    
+      <v-col class="d-flex" cols="12" sm="6">
     <v-layout>
     <v-flex xs12 sm6 offset-sm3>
-      <v-card>
-       
-
+      <v-card
+      max-width="700"
+      >
         <v-card-title primary-title>
           <v-container>
       <v-row>
@@ -52,10 +80,11 @@
       </v-card>
     </v-flex>
   </v-layout>
-     
+  </v-col>
+    </v-row>
  
 </div>
-  
+</div>
 
 </template>
 
