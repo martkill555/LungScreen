@@ -20,12 +20,18 @@
         </v-col>
        <v-col cols="12" sm="2">
           <v-text-field
-            v-model="last"
+            autocomplete="current-password"
+            :value="userPassword"
             label="Password"
+           
+            :append-icon="value ? 'mdi-eye' : 'mdi-eye-off'"
+            @click:append="() => (value = !value)"
+            :type="value ? 'password' : 'text'"
+            :rules="[rules.password]"
+            @input="_=>userPassword=_"
             filled
             shaped
-            dark
-            
+            dark=""
           ></v-text-field>
         </v-col>
   
@@ -35,3 +41,23 @@
     </v-toolbar>
 
 </template>
+
+<script>
+  export default {
+    data: () => ({
+      userPassword: "",
+      valid: true,
+      value: true,
+      rules: {
+        required: value => !!value || "Required.",
+        password: value => {
+          const pattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/;
+          return (
+            pattern.test(value) ||
+            ""
+          );
+        }
+      }
+    })
+  };
+</script>
