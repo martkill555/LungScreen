@@ -129,25 +129,51 @@
     </v-card-text>
   </v-card>
     </v-card-actions>
-    <v-card
+  <v-card
     class="mx-auto"
      width="1500"
-    height="1500"
+    height="500"
   >
     <v-img
       class="white--text align-end"
-      height="200px"
+       height="200px"
       width="200px"
-      src="https://scontent.fbkk2-5.fna.fbcdn.net/v/t31.0-8/p960x960/1506182_618107671602087_1288753790_o.jpg?_nc_cat=110&_nc_sid=7aed08&_nc_eui2=AeFmlqGqA6BAGGtEcKoCOdSxIHG_-CCmQ_wgcb_4IKZD_PKosA1i3Xn3WGpIEhMTW3zwTIOIFE5ImHLXysTuNZgm&_nc_ohc=IdUPWmZwkYMAX_2AWzQ&_nc_ht=scontent.fbkk2-5.fna&_nc_tp=6&oh=63b37d338d65b8633203ccc35f80fdbf&oe=5F454E22"
+      src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t31.0-8/p960x960/1077372_534444136635108_22341928_o.jpg?_nc_cat=108&_nc_sid=210fed&_nc_eui2=AeEDe3xVFatIIMEJxbBeAh40jinGJh5GWKCOKcYmHkZYoHSZioXoNvvbzqLK49w8Oc_eTrc8mi5f-wrwWiMxujNo&_nc_ohc=wXOMeF58CRcAX9MfnBq&_nc_ht=scontent.fbkk10-1.fna&_nc_tp=6&oh=dd9f7fd3b69d56992e1a58054e0df28c&oe=5F491EBD"
     >
       <v-card-title></v-card-title>
     </v-img>
 
-    <v-card-subtitle class="pb-0">29/07/2020</v-card-subtitle>
+    <v-card-subtitle class="pb-0">28/07/2020</v-card-subtitle>
 
-   <v-form>
+  <v-form>
     <v-container>
       <v-row>
+
+        <v-col cols="6" sm="3">
+          <v-text-field
+            v-model="first"
+            label="Name"
+            outlined
+          ></v-text-field>
+        </v-col>
+
+        <v-col cols="6" sm="3">
+          <v-text-field
+            v-model="last"
+            label="Case ID"
+            outlined
+          ></v-text-field>
+        </v-col>
+<v-col cols="6" sm="3">
+        <v-textarea
+          label="Detect"
+          auto-grow
+          outlined
+          rows="3"
+          row-height="25"
+          
+        ></v-textarea>
+      </v-col>
       <v-col cols="6" sm="3">
         <v-textarea
           label="Comment"
@@ -161,6 +187,7 @@
       </v-row>
     </v-container>
   </v-form>
+    </v-card-text>
 
     <v-card-actions>
       <nuxt-link to="/MoreInfo"> <v-btn x-large color="#EACB5E" dark>More Info</v-btn> </nuxt-link>

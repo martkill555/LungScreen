@@ -89,8 +89,8 @@
     </v-list-item>
 
     <v-card-actions>
-      <v-btn text color='primary'>Lungscreen</v-btn><br>
-      <v-btn text danger>History</v-btn>
+     <nuxt-link to="/Screen"> <v-btn  color="#3E6896" dark>Lung Screen</v-btn></nuxt-link>
+     <nuxt-link to="/History"> <v-btn  color="#A32E2E" dark>History</v-btn></nuxt-link>
     </v-card-actions>
   </v-card>
   </v-col >
@@ -113,7 +113,7 @@
       Hospital: oyo 460 int place
   </v-card-subtitle>
     <v-card-actions>
-      <v-btn text>Edit profile</v-btn>
+      <nuxt-link to="/ProfileEdit"> <v-btn  color="#A32E2E" dark>Edit Profile</v-btn></nuxt-link>
 
       <v-spacer></v-spacer>
 
