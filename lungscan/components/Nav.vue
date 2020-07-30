@@ -19,7 +19,7 @@
    
   
    
-    <nuxt-link to="/ProfileEdit"> <v-btn text large color="primary" dark>Profile</v-btn> </nuxt-link>
+    <nuxt-link to="/Profile"> <v-btn text large color="primary" dark>Profile</v-btn> </nuxt-link>
     <nuxt-link to="/">  <v-btn text large color="primary" dark>Logout</v-btn></nuxt-link>
     
       
