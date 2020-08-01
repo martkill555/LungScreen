@@ -1,5 +1,12 @@
 <template>
-<v-card
+<div id="app">
+   <style>
+.myFont {
+  font-family:  Impact, Charcoal, sans-serif
+}
+
+</style>
+<v-card  id="inspire" class="myFont"
      background-color="grey lighten-5"
     color="grey lighten-4"
     flat
@@ -12,7 +19,7 @@
     <img src="../store/logo.png" width="30" height="30">
        
 
-       <nuxt-link to="/Profile">  <v-btn text large color="primary" dark>Lungscan</v-btn></nuxt-link>
+       <nuxt-link to="/Profile">  <v-btn text x-large color="primary" dark>Lungscan</v-btn></nuxt-link>
 
       <v-spacer></v-spacer>
 
@@ -31,5 +38,5 @@
      
     </v-toolbar>
   </v-card>
- 
+ </div>
   </template>

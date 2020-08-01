@@ -52,7 +52,7 @@
       <nuxt-link to="/Profile"> <v-btn x-large color="#A32E2E" dark>Discard</v-btn></nuxt-link>
     </v-card-actions>
   </v-card>
-   
+
       </div>
       
 

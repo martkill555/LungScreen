@@ -1,69 +1,14 @@
 <template>
+
 <div >
+ 
 <Nav />
-<div >
- <!-- <v-layout >
-    <v-flex xs12 sm6 offset-sm3>
-      <v-card 
-    max-width="1000"
-    height="400"
-     style="margin:auto">
-        <v-card-title primary-title>Profile
-          <v-container>
-      <v-row>
-        <v-col cols="12" sm="6" md="3">
-          <v-text-field
-            label="Name"
-          ></v-text-field>
-        </v-col>
-        <v-col cols="12" sm="6" md="3">
-        <v-img src="../store/profile.jpg"></v-img>
-        </v-col>
-        <v-col cols="12" sm="6" md="3">
-          <v-text-field
-            label="Tell"
-          ></v-text-field>
-        </v-col>
-        <v-col cols="12" sm="6" md="3">
-          <v-text-field
-            label="Hospital"
-          ></v-text-field>
-        </v-col>
 
-         <v-col class="d-flex" cols="12" sm="6">
-        <v-select
-          :items="items"
-          label="Position"
-          dense
-        ></v-select>
-      </v-col>
 
-      </v-row>
-    </v-container>
-        </v-card-title>
-        
-<nuxt-link to="/ProfileEdit"> <v-btn x-large color="#A32E2E" dark>Edit Profile</v-btn> </nuxt-link>
-       
-      </v-card >
-    </v-flex>
-  </v-layout>
-     <div class="my-2">
 
-       
-       <nuxt-link to="/Screen"> <v-btn x-large color="#3E6896" dark>Lung Screen</v-btn> </nuxt-link>
-        
-      </div>
-      
-    <v-col cols="12" sm="6">
-        <div class="text-center">
-          
-          <div class="my-2">
-            <nuxt-link to="/History"> <v-btn x-large color="#3E6896" dark>History</v-btn> </nuxt-link>
-          </div>
-        </div>
-      </v-col>
-      </div>
-</div> -->
+
+    
+ 
 <v-row >
 <v-col class="d-flex" cols="12" sm="6">
 <v-card
@@ -137,8 +82,15 @@
   </v-card>
   </v-col>
   </v-row>
-  </div>
  
+  
+<template>
+ <v-parallax
+        src='https://cdn.discordapp.com/attachments/678634511214313493/737617401197232138/Main-BG.jpg'
+  >
+    
+  </v-parallax>
+</template>
 </div>
 
 </template>
@@ -146,11 +98,7 @@
 <script>
 
 import Nav from '@/components/Nav'
-// export default {
-//   components: {
-//     Nav
-//   }
-// }
+
 export default ({
   
   components: {
