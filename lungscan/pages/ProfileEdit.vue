@@ -4,7 +4,7 @@
 <Footer/>
 <div>
        <v-row >
-<v-col class="d-flex" cols="12" sm="6">
+<!-- <v-col class="d-flex" cols="12" sm="6"> -->
 <v-card
     class="mx-auto"
     max-width="400"
@@ -32,10 +32,10 @@
 <input v-show="false" ref="inputUpload" type="file" @change="yourFunction" >
     </v-card-actions>
   </v-card>
-  </v-col >
+  <!-- </v-col > -->
 
     
-      <v-col class="d-flex" cols="12" sm="6">
+      <v-col style="margin-left:300px" class="d-flex" cols="12" sm="6">
     <v-layout>
     <v-flex xs12 sm6 offset-sm3>
       <v-card
@@ -53,7 +53,7 @@
        
         <v-col cols="12" sm="6" md="3">
           <v-text-field
-            label="Tell"
+            label="Tel no."
           ></v-text-field>
         </v-col>
 
@@ -65,6 +65,7 @@
 
          <v-col class="d-flex" cols="12" sm="6">
         <v-select
+          v-model="value"
           :items="items"
           label="Position"
           dense
@@ -74,9 +75,11 @@
       </v-row>
     </v-container>
         </v-card-title>
-        
+        <div >
+          <center>
 <nuxt-link to="/Profile"> <v-btn x-large color="#A32E2E" dark>Save</v-btn> </nuxt-link>
-       
+          </center>
+        </div>
       </v-card>
     </v-flex>
   </v-layout>
@@ -114,8 +117,9 @@ export default ({
       ]
     }
 },
-data: () => ({
+  data: () => ({
       items: ['Staff','Specialist'],
+      value: ['Staff','Specialist'],
     })
 })
 </script>
