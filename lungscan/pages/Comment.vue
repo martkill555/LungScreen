@@ -126,7 +126,7 @@
      <v-col class="d-flex" cols="12" sm="6">
         <v-select
         id="inspire" class="myFont" 
-          :items2="items2"
+          :items="items2"
           label="Strong"
           dense
         ></v-select>
@@ -184,9 +184,8 @@ export default ({
 },
 data: () => ({
       items1: ['Normal','Abnormal'],
-    }),
-    data: () => ({
       items2: ['Strong','Weakness'],
-    })
+    }),
+   
 })
 </script>

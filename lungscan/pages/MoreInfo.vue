@@ -5,117 +5,138 @@
 
      
 
-   <v-card
-    class="mx-auto"
-    width="1500"
-    height="600"
+   <style>
+.myFont {
+  font-family:  Impact, Charcoal, sans-serif
+}
+</style>
+ <v-card  
+   style="margin:auto"
+    
+    width="1000"
+    height="650"
   >
     
 
     <v-toolbar
       color="#A32E2E"
       dark
-    >
-     
-
-      <v-toolbar-title>Case ID :</v-toolbar-title>
-
-      <v-spacer></v-spacer>
-
-      
+      >
+ 
+      <v-toolbar-title class="text-center"  ><h3  id="inspire" class="myFont">More Information</h3></v-toolbar-title>
+      <v-spacer>  </v-spacer> 
+        <v-toolbar-title class="text-center"  ><h5  >Case ID: 213</h5></v-toolbar-title>
     </v-toolbar>
-
-    <v-container fluid>
-      <v-row dense>
-       <v-card
-    class="mx-auto"
-    width="1500"
-    height="400"
-    outlined
-  >
-    <!-- <v-list-item three-line>
-      <v-list-item-content>
-        <div class="overline mb-4">OVERLINE</div>
-        <v-list-item-title class="headline mb-1">Headline 5</v-list-item-title>
-        <v-list-item-subtitle>Greyhound divisely hello coldly fonwderfully</v-list-item-subtitle>
-      </v-list-item-content>
-
-      <v-list-item-avatar
-        tile
-        size="80"
-        color="grey"
-      ></v-list-item-avatar>
-    </v-list-item> -->
-
-    <v-card-actions>
-     
-      <v-card flat>
-    <v-card-text>
-      
-      <v-container fluid>
-        <v-row>
-          <v-img
-      class="white--text align-end"
-      height="200px"
-      width="200px"
-      src="https://scontent.fbkk2-5.fna.fbcdn.net/v/t31.0-8/p960x960/1506182_618107671602087_1288753790_o.jpg?_nc_cat=110&_nc_sid=7aed08&_nc_eui2=AeFmlqGqA6BAGGtEcKoCOdSxIHG_-CCmQ_wgcb_4IKZD_PKosA1i3Xn3WGpIEhMTW3zwTIOIFE5ImHLXysTuNZgm&_nc_ohc=IdUPWmZwkYMAX_2AWzQ&_nc_ht=scontent.fbkk2-5.fna&_nc_tp=6&oh=63b37d338d65b8633203ccc35f80fdbf&oe=5F454E22"
+ <v-container><v-row>
+     <img
+      height="50"
+      width="50"
+      src=" https://scontent.fbkk2-6.fna.fbcdn.net/v/t1.15752-9/116217099_295548811698040_8853209647408971802_n.png?_nc_cat=107&_nc_sid=b96e70&_nc_eui2=AeEbRPfShqaNql28UP0v7WOpoAFiJY2WL6egAWIljZYvp3jFgA1huAICdTEt0oZCzwI0dyp9wHwnsZnyUj1rnSdx&_nc_ohc=fKfd1KEVNYsAX8DkkW6&_nc_ht=scontent.fbkk2-6.fna&oh=7d2ac5e5c8db91738be28de343145023&oe=5F4C1B71"
     >
-      <v-card-title></v-card-title>
-    </v-img>
-          <v-col cols="6" sm="3">
-          <v-text-field
-            v-model="first"
-            label="Name"
-            outlined
-          ></v-text-field>
-        </v-col>
-
-        <v-col cols="6" sm="3">
-          <v-text-field
-            v-model="last"
-            label="Date"
-            outlined
-          ></v-text-field>
-        </v-col>
- <v-col cols="6" sm="3">
-          <v-text-field
-            v-model="last"
-            label="Note"
-            outlined
-          ></v-text-field>
-        </v-col>
-      <v-col cols="6" sm="3">
-        <v-textarea
-          label="Program Detect"
-          auto-grow
-          outlined
-          rows="3"
-          row-height="25"
-          
-        ></v-textarea>
-      </v-col>
-      <v-col cols="6" sm="3">
-        <v-textarea
-          label="Specialist Comment"
-          auto-grow
-          outlined
-          rows="3"
-          row-height="25"
-          
-        ></v-textarea>
-      </v-col>
-        </v-row>
-      </v-container>
-    </v-card-text>
-  </v-card>
-    </v-card-actions>
     
-  
-  
+    <img
+      height="150"
+      width="150"
+      src="https://prod-images-static.radiopaedia.org/images/1436778/7c47ea1fb9a8510e765ef510d36012_jumbo.jpeg"
+    >
+         <img
+      height="50"
+      width="50"
+      src=" https://scontent.fbkk2-6.fna.fbcdn.net/v/t1.15752-9/116217099_295548811698040_8853209647408971802_n.png?_nc_cat=107&_nc_sid=b96e70&_nc_eui2=AeEbRPfShqaNql28UP0v7WOpoAFiJY2WL6egAWIljZYvp3jFgA1huAICdTEt0oZCzwI0dyp9wHwnsZnyUj1rnSdx&_nc_ohc=fKfd1KEVNYsAX8DkkW6&_nc_ht=scontent.fbkk2-6.fna&oh=7d2ac5e5c8db91738be28de343145023&oe=5F4C1B71"
+    >
+   <v-data-table style="margin:auto"
+    
+    :headers="headers3"
+    :items="desserts3"
+    
+    hide-default-footer
+    class="elevation-1"
+  ></v-data-table>
+      
+      
+    
+ <v-spacer></v-spacer>
+ <nuxt-link to="/Comment"> <v-btn rounded color="#A32E2E" id="inspire" class="myFont" dark>Manual Comment</v-btn></nuxt-link>
+ </v-row>
+</v-container>
+<div> 
+     <v-row>
+  <v-card
+    style="margin:auto"
+    width="950"
+    height="350"
+    outlined
+    shaped
+  >
+<v-container >
+<v-row style="margin:auto">
+   <v-card
+    class="mx-auto"
+    color="#EAEAEA"
+    
+    width="400"
+  >
+  <v-container>
+   
+    <v-card-title>
+      
+       <span  id="inspire" class="myFont">Program Detect</span>
+    </v-card-title>
+ 
+  <v-data-table style="margin:auto"
+    
+    :headers="headers"
+    :items="desserts"
+    
+    hide-default-footer
+    class="elevation-1"
+  ></v-data-table>
+
+    
+ </v-container>
+<v-container>
+  </v-container>
+    
   </v-card>
-  <nuxt-link to="/Comment"> <v-btn x-large color="#A32E2E" dark>Manual Comment</v-btn> </nuxt-link>
-      </v-row>
-    </v-container>
+<v-spacer></v-spacer>
+  <v-card
+    class="mx-auto"
+    color="#EAEAEA"
+    
+    width="500"
+    height="320"
+  >
+    <v-container>
+   
+    <v-card-title>
+      
+       <span  id="inspire" class="myFont">Specialist Comment</span>
+    </v-card-title>
+ 
+  <v-data-table style="margin:auto"
+    
+    :headers="headers2"
+    :items="desserts2"
+    
+    hide-default-footer
+    class="elevation-1"
+  ></v-data-table>
+
+    
+ </v-container>
+<v-container>
+  </v-container>
+  </v-card>
+  
+</v-row>
+</v-container>
+
+
+ 
+  
+  </v-card >
+     </v-row>
+</div>
   </v-card>
    
 
@@ -133,7 +154,80 @@ import Nav from '@/components/Nav'
 //   }
 // }
 export default ({
-    
+     data () {
+      return {
+        headers: [
+          {
+            text: 'Detect',
+            align: 'start',
+            value: 'name',
+          },
+          { text: 'Date', value: 'date' },
+             
+             ],
+        desserts: [
+          {
+            name: 'Positive',
+            date: '10/9/2020',             
+                                
+          },
+          {
+            name: 'Strong',
+            date: '20/10/2020',             
+                                
+          },
+          
+              
+        ],
+        headers2: [
+          {
+            
+            text: 'Comment',
+            align: 'start',
+            value: 'name',
+          },
+          { text: 'Description', value: 'description' }, 
+          { text: 'Date', value: 'date' }, 
+              
+             ],
+        desserts2: [
+          {
+            name: 'Positive',
+            description: '-- --',
+            date: '10/9/2020',             
+                                
+          },
+          {
+            name: 'Strong',
+            description: '-- --',
+            date: '20/10/2020',             
+                                
+          },
+          
+              
+        ],
+         headers3: [
+          {
+            text: 'Name',
+            align: 'start',
+            value: 'name',
+          },
+          { text: 'Date', value: 'date' }, 
+          { text: 'Note', value: 'note' }, 
+          
+              
+             ],
+        desserts3: [
+          {
+            name: 'Mr. Dhanyasit Ausavakulpairoj',
+            note: '-- --',
+            date: '10/9/2020',             
+                                
+          },                  
+              
+        ],
+      }
+    },    
   components: {
     Nav
   },
@@ -149,9 +243,7 @@ export default ({
       ]
     }
 },
-data: () => ({
-      items: ['Staff','Specialist'],
-    })
+
 })
 </script>
 
