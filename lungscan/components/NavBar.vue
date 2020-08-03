@@ -8,7 +8,9 @@
   font-family:  Impact, Charcoal, sans-serif
 }
 </style>
-  <v-toolbar dense color="#A32E2E"  id="inspire" class="myFont" >
+  <v-toolbar dense color="#A32E2E"  id="inspire" class="myFont" 
+  height = "60"
+  >
      
         
     <img src="../store/logo.png" width="30" height="30">

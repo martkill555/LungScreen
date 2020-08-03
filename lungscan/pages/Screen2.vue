@@ -2,57 +2,139 @@
 <div >
 <Nav />
 <Footer/>
- <v-card
-    class="mx-auto"
-    max-width="800"
-    height="690"
+ <style>
+.myFont {
+  font-family:  Impact, Charcoal, sans-serif
+}
+</style>
+ <v-card  
+   style="margin:auto"
+    
+    width="1000"
+    height="650"
   >
-    <v-img
-      class="white--text align-end"
-      height="300px"
-      width="300px"
+    
+
+    <v-toolbar
+      color="#A32E2E"
+      dark
+      >
+ 
+      <v-toolbar-title class="text-center"  ><h3  id="inspire" class="myFont">Result</h3></v-toolbar-title>
+        
+    </v-toolbar>
+
+    <v-container fluid>
+      <v-row dense >
+       <v-card
+   
+    width="1500"
+    height="500"
+    outlined
+  >
+  <v-container fluid>
+      <div align="center"
+      justify="center">
+     <v-img
+      class="img-center"
+      height="200px"
+      width="200px"
       src="https://prod-images-static.radiopaedia.org/images/1436778/7c47ea1fb9a8510e765ef510d36012_jumbo.jpeg"
     >
-    
-      <v-card-title >Result</v-card-title>
+      
     </v-img>
 
     
-      <v-col cols="4">
-        <v-subheader>Detect</v-subheader>
-      </v-col>
-      <v-col cols="8">
-        <v-text-field
-          label="Positive/Negative"
-          value=""
-          prefix=":"
-        ></v-text-field>
-      </v-col>
-       <v-col cols="4">
-        <v-subheader>Confidence</v-subheader>
-      </v-col>
-      <v-col cols="8">
-        <v-text-field
-          label="Strong/Weak"
-          value=""
-          prefix=":"
-        ></v-text-field>
-      </v-col>
+  
+   
+<v-jumbotron 
+    
+    color="grey lighten-2"
+    align="center"
+      justify="center" >
+    <v-container fill-height>
+      <v-layout align-center>
+        <v-flex id="inspire" class="myFont">
+          <h2 class id="inspire"   >Detect</h2>
+          
+        
+          <h5 class="subheading">  </h5>
+          <v-btn  rounded x-large color="#D93939"  class="mx-0" dark>Positive</v-btn>
+        </v-flex>
+
+
+        
+      </v-layout>
+
+
+
+
+    </v-container>
+      <v-divider class="my-3"></v-divider>
+  </v-jumbotron>
+
+
+ <v-jumbotron 
+    color="grey lighten-2"
+    align="center"
+      justify="center" >
+    <v-container fill-height>
+      
+        <v-flex id="inspire" class="myFont">
+          <h2 class id="inspire"   >Confident</h2>
+          
+        
+          <h5 class="subheading">  </h5>
+          <v-btn  rounded large   class="mx-0">Strong</v-btn>
+          
+        </v-flex>      
+            
+    </v-container>
+  </v-jumbotron>
+  
    
 
-    <v-card-text class="text--primary">
-      <div>‘Emperical confirmation by specialist is required’</div>
 
-      
-    </v-card-text>
 
-    <v-card-actions>
-      <nuxt-link to="/Profile"> <v-btn x-large color="#A32E2E" dark>Record</v-btn></nuxt-link>
 
-      <nuxt-link to="/Profile"> <v-btn x-large color="#A32E2E" dark>Discard</v-btn></nuxt-link>
-    </v-card-actions>
-  </v-card>
+    </div>
+<div align="center"
+      justify="center" >
+    <v-row >
  
+
+
+
+
+
+
+<v-card-text id="inspire" class="myFont" >
+  <h2 >
+          ‘Emperical confirmation by specialist is required’
+          </h2>
+        </v-card-text>
+
+
+</v-row>
+</div>
+   </v-container>
+  
+  </v-card >
+  
+      </v-row>
+    </v-container>
+<div align="center"
+      justify="center" >
+  
+   <nuxt-link to="/Profile"> <v-btn x-large color="#478E00" id="inspire" class="myFont" >Record</v-btn></nuxt-link>
+      <nuxt-link to="/Profile"> <v-btn x-large color="#A32E2E" id="inspire" class="myFont" >Discard</v-btn></nuxt-link>
+  
+      </div>
+
+  </v-card>
+
+
+
       </div>
       
 
@@ -72,6 +154,7 @@ export default ({
   components: {
     Nav
   },
+  
     head () {
     
     return {
@@ -83,6 +166,7 @@ export default ({
       ]
     }
 }
+
 })
 </script>
 

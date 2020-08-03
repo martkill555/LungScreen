@@ -50,7 +50,7 @@
           
           <v-divider class="my-3"></v-divider>
           <h2 class="subheading">Lung Scan</h2>
-          <v-btn large  color="#CC2E2E"dark class="mx-0">Discover Our Application</v-btn>
+          <v-btn large  color="#CC2E2E" dark class="mx-0">Discover Our Application</v-btn>
         </v-flex>
 
 

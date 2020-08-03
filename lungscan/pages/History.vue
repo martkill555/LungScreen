@@ -141,7 +141,7 @@
       width="200px"
       src="https://scontent.fbkk2-7.fna.fbcdn.net/v/t31.0-8/p960x960/1077372_534444136635108_22341928_o.jpg?_nc_cat=108&_nc_sid=210fed&_nc_eui2=AeEDe3xVFatIIMEJxbBeAh40jinGJh5GWKCOKcYmHkZYoHSZioXoNvvbzqLK49w8Oc_eTrc8mi5f-wrwWiMxujNo&_nc_ohc=wXOMeF58CRcAX-qJkwV&_nc_ht=scontent.fbkk2-7.fna&_nc_tp=6&oh=6685e7ebf320a70bdaff171629ee278f&oe=5F491EBD"
     >
-      <v-card-title></v-card-title>
+      
     </v-img>
 
     <v-card-subtitle class="pb-0">28/07/2020</v-card-subtitle>
@@ -188,7 +188,7 @@
       </v-row>
     </v-container>
   </v-form>
-    </v-card-text>
+   
 
     <v-card-actions>
       <nuxt-link to="/MoreInfo"> <v-btn x-large color="#EACB5E" dark>More Info</v-btn> </nuxt-link>
@@ -254,7 +254,7 @@
       </v-row>
     </v-container>
   </v-form>
-    </v-card-text>
+   
 
     <v-card-actions>
       <nuxt-link to="/MoreInfo"> <v-btn x-large color="#EACB5E" dark>More Info</v-btn> </nuxt-link>

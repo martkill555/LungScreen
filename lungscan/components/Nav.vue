@@ -13,7 +13,7 @@
     height="200px"
     tile
   >
-    <v-toolbar dense color="#A32E2E" >
+    <v-toolbar dense color="#A32E2E"  height = "60" >
      
         
     <img src="../store/logo.png" width="30" height="30">
