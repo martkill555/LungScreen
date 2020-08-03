@@ -1,7 +1,7 @@
 <template>
 <div >
 <Nav />
-
+<Footer/>
  <v-card
     class="mx-auto"
     max-width="800"
@@ -52,7 +52,7 @@
       <nuxt-link to="/Profile"> <v-btn x-large color="#A32E2E" dark>Discard</v-btn></nuxt-link>
     </v-card-actions>
   </v-card>
-
+ 
       </div>
       
 
@@ -72,7 +72,7 @@ export default ({
   components: {
     Nav
   },
-  head () {
+    head () {
     
     return {
       script: [

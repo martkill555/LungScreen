@@ -1,13 +1,19 @@
 <template >
-  <div style="background-image:url('https://cdn.discordapp.com/attachments/678634511214313493/737617401197232138/Main-BG.jpg'), background-repeat: no-repeat,
-  background-size: auto">
+  <div id="app">
   <NavBar/>
+   <Footer/>
+  <style>
+.myFont {
+  font-family:  Impact, Charcoal, sans-serif
+}
+
+</style>
 <div style="margin:auto" >
       
  <v-card style="margin:auto"
     elevation="24"
     max-width="2000"
-    
+    height="200"
     class="mx-auto"
   >
     
@@ -34,43 +40,58 @@
 
     <v-jumbotron 
     
-    color="grey lighten-2" >
+    color="grey lighten-2"
+    align="center"
+      justify="center" >
     <v-container fill-height>
       <v-layout align-center>
-        <v-flex >
-          <h1 class id="inspire"   >Discover Our Application</h1>
-          <span class="subheading">Lungscan</span>
+        <v-flex id="inspire" class="myFont">
+          <h1 class id="inspire"   >Tuberculosis screener</h1>
+          
           <v-divider class="my-3"></v-divider>
-          <div class="title mb-3">Tuberculosis screener!</div>
-          <v-btn large  color="#CC2E2E"dark class="mx-0">See more</v-btn>
+          <h2 class="subheading">Lung Scan</h2>
+          <v-btn large  color="#CC2E2E"dark class="mx-0">Discover Our Application</v-btn>
         </v-flex>
+
+
+        
       </v-layout>
+
+
+      
     </v-container>
   </v-jumbotron>
+<div align="center"
+      justify="center">
+  <img src="https://scontent.fbkk2-5.fna.fbcdn.net/v/t1.15752-9/116080892_689019555014265_2885304354529837000_n.png?_nc_cat=110&_nc_sid=b96e70&_nc_eui2=AeFdTofX5j84Vd2jykt902M28IWWzNBD-7XwhZbM0EP7tUoHqi9cRg-m2n-cS_VSNzkS7d5ljYKVvlHa12uivsvA&_nc_ohc=Ci6ORpqZvAUAX_cxnBB&_nc_ht=scontent.fbkk2-5.fna&oh=503a91b244b8288686b749b1659b69b8&oe=5F493782"
+   width="1000" height="200">
+  </div>
   </v-card>
 
 
 
 </div>
-<template>
- <v-parallax
-        src='https://cdn.discordapp.com/attachments/678634511214313493/737617401197232138/Main-BG.jpg'
-  >
-    
-  </v-parallax>
+
+
+
+
+ 
+
+  <template>
+
 </template>
-
-
-
-
+  
   </div>
+  
 </template>
+
 
 
 
 <script>
 
 import Navbar from '@/components/Nav'
+import Footer from '@/components/Footer'
  
 export default ({data () {
       return {
@@ -88,6 +109,10 @@ export default ({data () {
   components: {
     Navbar
   },
+  components: {
+    Footer
+  },
+   
   head () {
     
     return {

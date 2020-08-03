@@ -1,6 +1,7 @@
 <template>
 <div >
 <Nav />
+<Footer/>
 
 
      
@@ -128,13 +129,7 @@
      
     </v-card-actions>
   </v-card>
-  <template>
- <v-parallax
-        src='https://cdn.discordapp.com/attachments/678634511214313493/737617401197232138/Main-BG.jpg'
-  >
-    
-  </v-parallax>
-</template>
+ 
 </div>
   
 
@@ -153,6 +148,7 @@ export default ({
   components: {
     Nav
   },
+ 
   head () {
     
     return {

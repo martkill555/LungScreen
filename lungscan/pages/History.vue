@@ -1,6 +1,7 @@
 <template>
 <div >
 <Nav />
+<Footer/>
 
    <v-card
     class="mx-auto"
@@ -138,7 +139,7 @@
       class="white--text align-end"
        height="200px"
       width="200px"
-      src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t31.0-8/15440410_1164403710308829_709828196005354042_o.jpg?_nc_cat=110&_nc_sid=daf655&_nc_eui2=AeEYortViqWuVVOQ0iTeTh9SXkmtCFQlJmVeSa0IVCUmZUEWwuZ8FFckXAzl-RYnkRrqMkNh_uTvNk9Bvt-4tSvN&_nc_ohc=O4PDzAfYAVQAX9rdzA9&_nc_ht=scontent.fbkk10-1.fna&oh=bfe78e5534bc0e0716159342a5cbc329&oe=5F47B316"
+      src="https://scontent.fbkk2-7.fna.fbcdn.net/v/t31.0-8/p960x960/1077372_534444136635108_22341928_o.jpg?_nc_cat=108&_nc_sid=210fed&_nc_eui2=AeEDe3xVFatIIMEJxbBeAh40jinGJh5GWKCOKcYmHkZYoHSZioXoNvvbzqLK49w8Oc_eTrc8mi5f-wrwWiMxujNo&_nc_ohc=wXOMeF58CRcAX-qJkwV&_nc_ht=scontent.fbkk2-7.fna&_nc_tp=6&oh=6685e7ebf320a70bdaff171629ee278f&oe=5F491EBD"
     >
       <v-card-title></v-card-title>
     </v-img>
@@ -204,7 +205,7 @@
       class="white--text align-end"
        height="200px"
       width="200px"
-      src="https://cdn.discordapp.com/attachments/678634511214313493/738322230781411378/106912103_144906173859246_4071149037015252191_n.png"
+      src="https://scontent.fbkk2-4.fna.fbcdn.net/v/t1.15752-9/116043316_3283045701919981_6343011422082461360_n.jpg?_nc_cat=101&_nc_sid=b96e70&_nc_eui2=AeH6S8x0XqgDunqolmUC89zz2kyBV46TgXLaTIFXjpOBciGshgyd9Ata0OVbKmaQ98wtuiKrCKy-sl7XQnPgBo0T&_nc_ohc=AJvRPjRvKUcAX8T-u6z&_nc_ht=scontent.fbkk2-4.fna&oh=16103e212c644481deee7b4268c84b1d&oe=5F4A3D18"
     >
       <v-card-title></v-card-title>
     </v-img>
@@ -266,13 +267,7 @@
       </v-row>
     </v-container>
   </v-card>
-     <template>
- <v-parallax
-        src='https://cdn.discordapp.com/attachments/678634511214313493/737617401197232138/Main-BG.jpg'
-  >
-    
-  </v-parallax>
-</template>
+ 
  
 </div>
   
@@ -292,6 +287,7 @@ export default ({
   components: {
     Nav
   },
+ 
   head () {
     
     return {
