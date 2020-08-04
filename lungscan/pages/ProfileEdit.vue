@@ -2,91 +2,130 @@
 <div >
 <Nav />
 <Footer/>
-<div>
-       <v-row >
-<!-- <v-col class="d-flex" cols="12" sm="6"> -->
+      
+<style>
+.myFont {
+  font-family:  Impact, Charcoal, sans-serif
+}
+</style>
+
+<v-card  
+   style="margin:auto"
+    
+    width="1280"
+    height="600"
+  >
+<div  align="center"
+      justify="center">
+  <v-row>   
 <v-card
     class="mx-auto"
-    max-width="400"
-    style="margin-left:200px"
-    outlined
-   
+    color="#A32E2E"
+    dark
+    width="500"
+    height="600"
   >
-    <v-list-item three-line>
-      <v-list-item-content>
-        <div class="overline mb-4 mx-auto">Profile</div>
-        <v-img src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t1.15752-9/90785475_555818048375458_3037732460386320384_n.jpg?_nc_cat=108&_nc_sid=b96e70&_nc_eui2=AeH4RzaWmmo4v3A88gdoss2sDc_lKpgOIMkNz-UqmA4gyQZ60FCa5qLjhSYscDRpljr883Jclh4BCCARVmrP0sKZ&_nc_ohc=baMSaF0-q14AX_x92yN&_nc_ht=scontent.fbkk10-1.fna&oh=cf66d09d54a80325e2b9db7047e0f50d&oe=5F469CAF"></v-img>
-        <v-list-item-title class="headline mb-1">Sarawut Rattanawichien</v-list-item-title>
-        <v-list-item-subtitle>Dark Tall and Handsome</v-list-item-subtitle>
-      </v-list-item-content>
+    <v-card-title dark>
+      
+      <h3  id="inspire" class="myFont" dark>Edit Profile</h3>
+      
+    </v-card-title>
+ <v-divider class="my-3"></v-divider>
+ <v-container></v-container><v-container></v-container><v-container></v-container>
+        <v-container>
+      <v-img
+      class="white--text align-end"
+       height="250px"
+      width="250px"
+      src="https://scontent.fbkk14-1.fna.fbcdn.net/v/t1.15752-9/116323324_954715811618624_1457594773915529290_n.png?_nc_cat=100&_nc_sid=b96e70&_nc_eui2=AeGaVcG1PSFT_1Z7i_hQs8HaMmHv5ocMkHoyYe_mhwyQeknv5p6PgjNQ8PI5s47niNWhMpwIq7xCoVHv5SWPX937&_nc_ohc=ttI7brikqekAX_4AoV7&_nc_ht=scontent.fbkk14-1.fna&oh=3c7f0361f26f6641827749df6e5b8d91&oe=5F505714"
+    >  </v-img>
+<v-container></v-container>
 
-      <v-list-item-avatar
-        tile
-        size="80"
-        color="grey"
-      ></v-list-item-avatar>
-    </v-list-item>
-
-    <v-card-actions>
-      <v-btn color="#A32E2E" @click="$refs.inputUpload.click()" dark>Select new image</v-btn>
+<v-container>
+ <v-btn rounded x-large color="#3E6896" id="inspire" class="myFont" @click="$refs.inputUpload.click()" dark>Select new image </v-btn>
 <input v-show="false" ref="inputUpload" type="file" @change="yourFunction" >
-    </v-card-actions>
-  </v-card>
-  <!-- </v-col > -->
+</v-container>
+        </v-container>
+     
+ 
 
+   
+   
+   
     
-      <v-col style="margin-left:300px" class="d-flex" cols="12" sm="6">
-    <v-layout>
-    <v-flex xs12 sm6 offset-sm3>
-      <v-card
-      max-width="700"
-      >
-        <v-card-title primary-title>
-          <v-container>
-      <v-row>
-
-        <v-col cols="12" sm="6" md="3">
-          <v-text-field
-            label="Name"
-          ></v-text-field>
-        </v-col>
-       
-        <v-col cols="12" sm="6" md="3">
-          <v-text-field
-            label="Tel no."
-          ></v-text-field>
-        </v-col>
-
-        <v-col cols="12" sm="6" md="3">
-          <v-text-field
-            label="Hospital"
-          ></v-text-field>
-        </v-col>
-
-         <v-col class="d-flex" cols="12" sm="6">
+  </v-card>
+   
+     
+    <v-card
+    class="mx-auto"
+     width="800"
+    height="600"
+  >
+  <v-container>
+  
+     <v-container>
+       <v-container></v-container><v-container></v-container><v-container></v-container>
+    <v-row>
+      <v-col cols="4">
+        <v-card-text id="inspire" class="myFont"><h3>Name</h3></v-card-text>
+      </v-col>
+      <v-col cols="8">
+        <v-text-field id="inspire" class="myFont"
+          label="First name - Last name"
+          value="Dr. Sarawut Rattanawichein"
+          prefix=": "
+        ></v-text-field>
+      </v-col>
+    </v-row>
+     <v-row>
+      <v-col cols="4">
+       <v-card-text id="inspire" class="myFont"><h3>Tel</h3></v-card-text>
+      </v-col>
+      <v-col cols="8">
+        <v-text-field id="inspire" class="myFont"
+          label=""
+          value="092-552-9166"
+          prefix=":"
+        ></v-text-field>
+      </v-col>
+    </v-row><v-row>
+      <v-col cols="4">
+       <v-card-text id="inspire" class="myFont"><h3>Hospital</h3></v-card-text>
+      </v-col>
+      <v-col cols="8">
+        <v-text-field id="inspire" class="myFont"
+          label=""
+          value="KMUTT Hospital"
+          prefix=":"
+        ></v-text-field>
+      </v-col>
+       <v-col cols="4">
+       <v-card-text id="inspire" class="myFont"><h3>Position</h3></v-card-text>
+      </v-col>
+      <v-col cols="8">
         <v-select
-          v-model="value"
-          :items="items"
-          label="Position"
-          dense
+        id="inspire" class="myFont" 
+          :items1="items1"
+          label="Specialist"
+          
+           prefix=":"
+          
         ></v-select>
       </v-col>
-
-      </v-row>
-    </v-container>
-        </v-card-title>
-        <div >
-          <center>
-<nuxt-link to="/Profile"> <v-btn x-large color="#A32E2E" dark>Save</v-btn> </nuxt-link>
-          </center>
-        </div>
-      </v-card>
-    </v-flex>
-  </v-layout>
-  </v-col>
     </v-row>
+    
+<v-container></v-container>
   
-</div>
+
+       <nuxt-link to="/Profile"> <v-btn  x-large color="#A32E2E" id="inspire" class="myFont" dark>Save</v-btn></nuxt-link>  
+         </v-container>
+         
+        
+      </v-container>
+  </v-card>
+  </v-row>
+  </div>
+</v-card>
 
 </div>
 
