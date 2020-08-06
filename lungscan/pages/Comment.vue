@@ -3,11 +3,6 @@
 <Nav />
 <Footer/>
 
- <style>
-.myFont {
-  font-family:  Impact, Charcoal, sans-serif
-}
-</style>
 
 <v-card  
    style="margin:auto"
@@ -27,7 +22,7 @@
   >
     <v-card-title dark>
       
-      <h3  id="inspire" class="myFont" dark>Manual Comment</h3>
+    <v-spacer />  <h3  id="inspire" class="myFont" dark>Manual Comment</h3><v-spacer />
       
     </v-card-title>
  <v-divider class="my-3"></v-divider>

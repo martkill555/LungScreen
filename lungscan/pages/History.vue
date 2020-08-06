@@ -6,7 +6,7 @@
    <v-card
     class="mx-auto"
     width="1600"
-    height="1500"
+    height="740"
     style="margin:auto"
   >
     
@@ -17,254 +17,62 @@
     >
      
 
-      <v-toolbar-title>History</v-toolbar-title>
+    <v-spacer />  <v-toolbar-title id="inspire" class="myFont"><h2>History</h2></v-toolbar-title><v-spacer />
 
-      <v-spacer></v-spacer>
+     
 
       
     </v-toolbar>
 
     <v-container fluid>
-      <v-row dense>
-       <v-card
-    class="mx-auto"
-     width="1485"
-     height="500"
-    outlined
-  >
-    <!-- <v-list-item three-line>
-      <v-list-item-content>
-        <div class="overline mb-4">OVERLINE</div>
-        <v-list-item-title class="headline mb-1">Headline 5</v-list-item-title>
-        <v-list-item-subtitle>Greyhound divisely hello coldly fonwderfully</v-list-item-subtitle>
-      </v-list-item-content>
-
-      <v-list-item-avatar
-        tile
-        size="80"
-        color="grey"
-      ></v-list-item-avatar>
-    </v-list-item> -->
-
-    <v-card-actions>
-     <v-text-field
-        hide-details
-        prepend-icon= mdi-magnify
-         
-        single-line
-      ></v-text-field>
-      <v-card flat>
-    <v-card-text>
-      <v-container fluid>
-        <v-row>
-          <v-col cols="12" sm="4" md="4">
-            <v-checkbox
-              v-model="ex4"
-              label="ID"
-              color="red"
-              value="red"
-              hide-details
-            ></v-checkbox>
-            <v-checkbox
-              v-model="ex4"
-              label="Date"
-              color="red darken-3"
-              value="red darken-3"
-              hide-details
-            ></v-checkbox>
-          </v-col>
-          <v-col cols="12" sm="4" md="4">
-            <v-checkbox
-              v-model="ex4"
-              label="Detecable"
-              color="indigo"
-              value="indigo"
-              hide-details
-            ></v-checkbox>
-            <v-checkbox
-              v-model="ex4"
-              label="Not Detectable"
-              color="indigo darken-3"
-              value="indigo darken-3"
-              hide-details
-            ></v-checkbox>
-          </v-col>
-          <v-col cols="12" sm="4" md="4">
-            <v-checkbox
-              v-model="ex4"
-              label="Specialist"
-              color="orange"
-              value="orange"
-              hide-details
-            ></v-checkbox>
-           
-          </v-col>
-        </v-row>
-
-        <v-row class="mt-12">
-          <v-col cols="12" sm="4" md="4">
-            <v-checkbox
-              v-model="ex4"
-              label="Name"
-              color="primary"
-              value="primary"
-              hide-details
-            ></v-checkbox>
-            <v-checkbox
-              v-model="ex4"
-              label="Last Name"
-              color="secondary"
-              value="secondary"
-              hide-details
-            ></v-checkbox>
-          </v-col>
-          <v-col cols="12" sm="4" md="4">
-          
-          </v-col>
-          <v-col cols="12" sm="4" md="4">
-           
-           
-          </v-col>
-        </v-row>
-      </v-container>
-    </v-card-text>
-  </v-card>
-    </v-card-actions>
-  <v-card
-    class="mx-auto"
-     width="1500"
-    height="500"
-  >
-    <v-img
-      class="white--text align-end"
-       height="200px"
-      width="200px"
-      src="https://scontent.fbkk2-7.fna.fbcdn.net/v/t31.0-8/p960x960/1077372_534444136635108_22341928_o.jpg?_nc_cat=108&_nc_sid=210fed&_nc_eui2=AeEDe3xVFatIIMEJxbBeAh40jinGJh5GWKCOKcYmHkZYoHSZioXoNvvbzqLK49w8Oc_eTrc8mi5f-wrwWiMxujNo&_nc_ohc=wXOMeF58CRcAX-qJkwV&_nc_ht=scontent.fbkk2-7.fna&_nc_tp=6&oh=6685e7ebf320a70bdaff171629ee278f&oe=5F491EBD"
-    >
       
-    </v-img>
 
-    <v-card-subtitle class="pb-0">28/07/2020</v-card-subtitle>
-
-  <v-form>
-    <v-container>
-      <v-row>
-
-        <v-col cols="6" sm="3">
-          <v-text-field
-            v-model="first"
-            label="Name"
-            outlined
-          ></v-text-field>
-        </v-col>
-
-        <v-col cols="6" sm="3">
-          <v-text-field
-            v-model="last"
-            label="Case ID"
-            outlined
-          ></v-text-field>
-        </v-col>
-<v-col cols="6" sm="3">
-        <v-textarea
-          label="Detect"
-          auto-grow
-          outlined
-          rows="3"
-          row-height="25"
-          
-        ></v-textarea>
-      </v-col>
-      <v-col cols="6" sm="3">
-        <v-textarea
-          label="Comment"
-          auto-grow
-          outlined
-          rows="3"
-          row-height="25"
-          
-        ></v-textarea>
-      </v-col>
-      </v-row>
-    </v-container>
-  </v-form>
-   
-
-    <v-card-actions>
-      <nuxt-link to="/MoreInfo"> <v-btn x-large color="#EACB5E" dark>More Info</v-btn> </nuxt-link>
-
-    <nuxt-link to="/Comment"> <v-btn x-large color="#A32E2E" dark>Manual Comment</v-btn> </nuxt-link>
-    </v-card-actions>
-  </v-card>
-  <v-card
-    class="mx-auto"
-     width="1500"
-    height="500"
+  <v-data-table
+      style="margin:auto"
+    :search="search"
+    :headers="headers"
+    :items="desserts"
+    sort-by="calories"
+    class="elevation-1"
   >
-    <v-img
-      class="white--text align-end"
-       height="200px"
-      width="200px"
-      src="https://scontent.fbkk2-4.fna.fbcdn.net/v/t1.15752-9/116043316_3283045701919981_6343011422082461360_n.jpg?_nc_cat=101&_nc_sid=b96e70&_nc_eui2=AeH6S8x0XqgDunqolmUC89zz2kyBV46TgXLaTIFXjpOBciGshgyd9Ata0OVbKmaQ98wtuiKrCKy-sl7XQnPgBo0T&_nc_ohc=AJvRPjRvKUcAX8T-u6z&_nc_ht=scontent.fbkk2-4.fna&oh=16103e212c644481deee7b4268c84b1d&oe=5F4A3D18"
-    >
-      <v-card-title></v-card-title>
-    </v-img>
-
-    <v-card-subtitle class="pb-0">28/07/2020</v-card-subtitle>
-
-  <v-form>
-    <v-container>
-      <v-row>
-
-        <v-col cols="6" sm="3">
-          <v-text-field
-            v-model="first"
-            label="Name"
-            outlined
-          ></v-text-field>
-        </v-col>
-
-        <v-col cols="6" sm="3">
-          <v-text-field
-            v-model="last"
-            label="Case ID"
-            outlined
-          ></v-text-field>
-        </v-col>
-<v-col cols="6" sm="3">
-        <v-textarea
-          label="Detect"
-          auto-grow
-          outlined
-          rows="3"
-          row-height="25"
-          
-        ></v-textarea>
-      </v-col>
-      <v-col cols="6" sm="3">
-        <v-textarea
-          label="Comment"
-          auto-grow
-          outlined
-          rows="3"
-          row-height="25"
-          
-        ></v-textarea>
-      </v-col>
-      </v-row>
-    </v-container>
-  </v-form>
-   
-
-    <v-card-actions>
-      <nuxt-link to="/MoreInfo"> <v-btn x-large color="#EACB5E" dark>More Info</v-btn> </nuxt-link>
-
-    <nuxt-link to="/Comment"> <v-btn x-large color="#A32E2E" dark>Manual Comment</v-btn> </nuxt-link>
-    </v-card-actions>
-  </v-card>
+    <template v-slot:top  style="margin:auto">
+      <v-toolbar flat color="white">
+           <v-col cols="3">
+         <v-text-field
+        v-model="search"
+        append-icon="mdi-magnify"
+        label="Search"
+        id="inspire" class="myFont"
+        single-line
+        hide-details
+      ></v-text-field>
+       </v-col>
+        
+        <v-spacer></v-spacer>
+       
   
-  </v-card>
-      </v-row>
+    <p>{{ selected }}</p>
+    <v-checkbox v-model="selected" label="ID" value="John" id="inspire" class="myFont"></v-checkbox>
+    <v-checkbox v-model="selected" label="Date" value="Jacob" id="inspire" class="myFont"></v-checkbox>
+     <v-checkbox v-model="selected" label="First Name" value="Jacob" id="inspire" class="myFont"></v-checkbox>
+      <v-checkbox v-model="selected" label="Last Name" value="Jacob" id="inspire" class="myFont"></v-checkbox>
+       <v-checkbox v-model="selected" label="Detectable" value="Jacob" id="inspire" class="myFont"></v-checkbox>
+        <v-checkbox v-model="selected" label="Not Detectable" value="Jacob" id="inspire" class="myFont"></v-checkbox>
+         <v-checkbox v-model="selected" label="Specialist" value="Jacob" id="inspire" class="myFont"></v-checkbox>
+  
+          
+      </v-toolbar>
+    </template >
+    <template v-slot:item.actions="{ item }"  style="margin:auto">
+      <nuxt-link to="/MoreInfo"> <v-btn  color="#EACB5E" dark >More Info</v-btn></nuxt-link>
+      <nuxt-link to="/Comment"> <v-btn  color="#A32E2E" dark>Manual Comment</v-btn></nuxt-link>
+    
+    </template>
+  
+  </v-data-table>
+
+    
+    
     </v-container>
   </v-card>
  
@@ -299,9 +107,178 @@ export default ({
       ]
     }
 },
+data () {
+      return {
+        selected: ['John'],
+      }
+    },
 data: () => ({
-      items: ['Staff','Specialist'],
-    })
+  
+      dialog: false,
+      
+       search: '',
+      headers: [
+        {
+           
+          text: 'Name',
+          align: 'start',
+          sortable: false,
+          value: 'name',
+        },
+        { text: 'Case ID', value: 'caseID' },
+        { text: 'Date', value: 'date' },
+        { text: 'Detect', value: 'detect' },
+        { text: 'Comment', value: 'comment' },
+        { text: 'Actions', value: 'actions', sortable: false },
+      ],
+          
+          }),
+    
+    watch: {
+      dialog (val) {
+        val || this.close()
+      },
+    },
+
+    created () {
+      this.initialize()
+    },
+
+    methods: {
+      initialize () {
+        this.desserts = [
+          {
+            name: 'Sarawut Rattanawichein',
+            caseID: 60130500248,
+            date: "20/10/2020",
+            detect: 'Negative',
+            comment: "-- --",
+          },
+          {
+              name: 'Sarawut Rattanawichein',
+            caseID: 60130500248,
+            date: "20/10/2020",
+            detect: 'Negative',
+            comment: "-- --",
+          },
+          {
+             name: 'Sarawut Rattanawichein',
+            caseID: 60130500248,
+            date: "20/10/2020",
+            detect: 'Negative',
+            comment: "-- --",
+          },
+          {
+             name: 'Sarawut Rattanawichein',
+            caseID: 60130500248,
+            date: "20/10/2020",
+            detect: 'Negative',
+            comment: "-- --",
+          },
+          {
+             name: 'Sarawut Rattanawichein',
+            caseID: 60130500248,
+            date: "20/10/2020",
+            detect: 'Negative',
+            comment: "-- --",
+          },
+          {
+             name: 'Sarawut Rattanawichein',
+            caseID: 60130500248,
+            date: "20/10/2020",
+            detect: 'Negative',
+            comment: "-- --",
+          },
+          {
+             name: 'Sarawut Rattanawichein',
+            caseID: 60130500248,
+            date: "20/10/2020",
+            detect: 'Negative',
+            comment: "-- --",
+          },
+          {
+             name: 'Sarawut Rattanawichein',
+            caseID: 60130500248,
+            date: "20/10/2020",
+            detect: 'Negative',
+            comment: "-- --",
+          },
+          {
+             name: 'Sarawut Rattanawichein',
+            caseID: 60130500248,
+            date: "20/10/2020",
+            detect: 'Negative',
+            comment: "-- --",
+          },
+          {
+             name: 'Sarawut Rattanawichein',
+            caseID: 60130500248,
+            date: "20/10/2020",
+            detect: 'Negative',
+            comment: "-- --",
+          },
+          {
+             name: 'Sarawut Rattanawichein',
+            caseID: 60130500248,
+            date: "20/10/2020",
+            detect: 'Negative',
+            comment: "-- --",
+          },
+          {
+             name: 'Sarawut Rattanawichein',
+            caseID: 60130500248,
+            date: "20/10/2020",
+            detect: 'Negative',
+            comment: "-- --",
+          },
+          {
+             name: 'Sarawut Rattanawichein',
+            caseID: 60130500248,
+            date: "20/10/2020",
+            detect: 'Negative',
+            comment: "-- --",
+          },
+          {
+             name: 'Sarawut Rattanawichein',
+            caseID: 60130500248,
+            date: "20/10/2020",
+            detect: 'Negative',
+            comment: "-- --",
+          },
+        
+      
+        ]
+      },
+
+      editItem (item) {
+        this.editedIndex = this.desserts.indexOf(item)
+        this.editedItem = Object.assign({}, item)
+        this.dialog = true
+      },
+
+      deleteItem (item) {
+        const index = this.desserts.indexOf(item)
+        confirm('Are you sure you want to delete this item?') && this.desserts.splice(index, 1)
+      },
+
+      close () {
+        this.dialog = false
+        this.$nextTick(() => {
+          this.editedItem = Object.assign({}, this.defaultItem)
+          this.editedIndex = -1
+        })
+      },
+
+      save () {
+        if (this.editedIndex > -1) {
+          Object.assign(this.desserts[this.editedIndex], this.editedItem)
+        } else {
+          this.desserts.push(this.editedItem)
+        }
+        this.close()
+      },
+    },
+    
 })
 </script>
 

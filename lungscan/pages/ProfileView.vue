@@ -23,24 +23,22 @@
   >
     <v-card-title dark>
       <v-spacer />
-      <h3  id="inspire" class="myFont" dark>Edit Profile</h3>
+      <h3  id="inspire" class="myFont" dark>Profile</h3>
       
    <v-spacer /> </v-card-title>
  <v-divider class="my-3"></v-divider>
  <v-container></v-container><v-container></v-container><v-container></v-container>
         <v-container>
-       <v-img
-      class="img-center"
-      height="200px"
-      width="200px"
-      src="https://cdn.discordapp.com/attachments/678634511214313493/737600952722522133/logo.png"
-    >
-       </v-img>
+      <v-img
+      class="white--text align-end"
+       height="250px"
+      width="250px"
+      src="https://scontent.fbkk14-1.fna.fbcdn.net/v/t1.15752-9/116323324_954715811618624_1457594773915529290_n.png?_nc_cat=100&_nc_sid=b96e70&_nc_eui2=AeGaVcG1PSFT_1Z7i_hQs8HaMmHv5ocMkHoyYe_mhwyQeknv5p6PgjNQ8PI5s47niNWhMpwIq7xCoVHv5SWPX937&_nc_ohc=ttI7brikqekAX_4AoV7&_nc_ht=scontent.fbkk14-1.fna&oh=3c7f0361f26f6641827749df6e5b8d91&oe=5F505714"
+    >  </v-img>
 <v-container></v-container>
 
 <v-container>
- <v-btn rounded x-large color="#3E6896" id="inspire" class="myFont" @click="$refs.inputUpload.click()" dark>Select new image </v-btn>
-<input v-show="false" ref="inputUpload" type="file" @change="yourFunction" >
+  <nuxt-link to="/ProfileEdit"> <v-btn  x-large color="#D60000" id="inspire" class="myFont" dark>Edit Profile</v-btn></nuxt-link>  
 </v-container>
         </v-container>
      
@@ -61,60 +59,44 @@
   <v-container>
   
      <v-container>
-       <v-container></v-container><v-container></v-container><v-container></v-container>
+       <v-container></v-container><v-container></v-container><v-container></v-container><v-container></v-container><v-container></v-container>
     <v-row>
       <v-col cols="4">
-        <v-card-text id="inspire" class="myFont"><h3>Name :</h3></v-card-text>
+        <v-card-text id="inspire" class="myFont"><h2>Name :</h2></v-card-text>
       </v-col>
       <v-col cols="8">
-        <v-text-field id="inspire" class="myFont"
-          label=""
-          value="Dr. Sarawut Rattanawichein"
-          prefix=": "
-        ></v-text-field>
+        <v-card-text ><h3 id="inspire" class="myFont">Dr. Sarawut Rattanawichein</h3></v-card-text>
       </v-col>
     </v-row>
      <v-row>
       <v-col cols="4">
-       <v-card-text id="inspire" class="myFont"><h3>Tel :</h3></v-card-text>
+       <v-card-text id="inspire" class="myFont"><h2>Tel :</h2></v-card-text>
       </v-col>
       <v-col cols="8">
-        <v-text-field id="inspire" class="myFont"
-          label=""
-          value="092-552-9166"
-          prefix=":"
-        ></v-text-field>
+        <v-card-text><h3 id="inspire" class="myFont">092-552-9166</h3></v-card-text>
       </v-col>
     </v-row><v-row>
       <v-col cols="4">
-       <v-card-text id="inspire" class="myFont"><h3>Hospital :</h3></v-card-text>
+       <v-card-text id="inspire" class="myFont"><h2>Hospital :</h2></v-card-text>
       </v-col>
       <v-col cols="8">
-        <v-text-field id="inspire" class="myFont"
-          label=""
-          value="KMUTT Hospital"
-          prefix=":"
-        ></v-text-field>
+        <v-card-text ><h3 id="inspire" class="myFont">KMUTT Hospital</h3></v-card-text>
       </v-col>
        <v-col cols="4">
-       <v-card-text id="inspire" class="myFont"><h3>Position :</h3></v-card-text>
+       <v-card-text id="inspire" class="myFont"><h2>Position :</h2></v-card-text>
       </v-col>
       <v-col cols="8">
-        <v-select
-        id="inspire" class="myFont" 
-          :items="items"
-          label="Specialist"
-          
-           
-          
-        ></v-select>
+        <v-card-text ><h3 id="inspire" class="myFont">Specialist</h3></v-card-text>
       </v-col>
+       <v-container></v-container> <v-container> <v-divider class="my-3"></v-divider></v-container>
+        <v-divider class="my-3"></v-divider>
+       <v-card-text><h4 id="inspire" class="myFont">Lung Scan 2020</h4> </v-card-text>
     </v-row>
     
 <v-container></v-container>
   
 
-       <nuxt-link to="/Profile"> <v-btn  x-large color="#D60000" id="inspire" class="myFont" dark>Save</v-btn></nuxt-link>  
+      
          </v-container>
          
         

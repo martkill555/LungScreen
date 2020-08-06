@@ -5,11 +5,7 @@
 
      
 
-   <style>
-.myFont {
-  font-family:  Impact, Charcoal, sans-serif
-}
-</style>
+ 
  <v-card  
    style="margin:auto"
     

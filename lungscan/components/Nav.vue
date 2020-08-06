@@ -2,7 +2,7 @@
 <div id="app">
    <style>
 .myFont {
-  font-family:  Impact, Charcoal, sans-serif
+  font-family:  maven pro
 }
 
 </style>
@@ -26,7 +26,7 @@
    
   
    
-    <nuxt-link to="/Profile"> <v-btn text large color="primary" dark>Profile</v-btn> </nuxt-link>
+    <nuxt-link to="/ProfileView"> <v-btn text large color="primary" dark>Profile</v-btn> </nuxt-link>
     <nuxt-link to="/">  <v-btn text large color="primary" dark>Logout</v-btn></nuxt-link>
     
       

@@ -4,7 +4,7 @@
        id="app">
    <style>
 .myFont {
-  font-family:  Impact, Charcoal, sans-serif
+  font-family:  maven pro
 }
 
 </style>

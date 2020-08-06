@@ -3,12 +3,14 @@
 
 
 <div id="app">
-  <style>
-.myFont {
-  font-family:  Impact, Charcoal, sans-serif
+
+<style>
+html{
+  font-family: maven pro
 }
 </style>
-  <v-toolbar dense color="#A32E2E"  id="inspire" class="myFont" 
+
+  <v-toolbar dense color="#A32E2E" 
   height = "60"
   >
      

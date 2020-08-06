@@ -2,12 +2,7 @@
 <div  >
 <Nav />
 <Footer/>
- <style>
-.myFont {
-  font-family:  Impact, Charcoal, sans-serif
-}
 
-</style>
          
   <v-card  
    style="margin:auto"
@@ -23,7 +18,7 @@
     >
      
 
-      <v-toolbar-title  ><h3  id="inspire" class="myFont">Screen </h3></v-toolbar-title>
+     <v-spacer /> <v-toolbar-title  ><h3  id="inspire" class="myFont">Screen </h3></v-toolbar-title><v-spacer />
 
       
 

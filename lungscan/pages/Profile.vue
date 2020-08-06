@@ -1,156 +1,126 @@
 <template>
 
 <div >
- <div >
+ 
 <Nav />
+ 
 <Footer/>
-<div>
-       <v-row >
-<!-- <v-col class="d-flex" cols="12" sm="6"> -->
+<v-container>
+   <v-row>
 <v-card
     class="mx-auto"
-    max-width="400"
-    style="margin-left:200px"
-    outlined
-   
+    color="#AD2323"
+    dark
+    width="500"
+    height="500"
   >
-    <v-list-item three-line>
-      <v-list-item-content>
-        <div class="overline mb-4 mx-auto">Profile</div>
-        <v-img src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t1.0-9/16729224_1110358685756307_6038790989887994639_n.jpg?_nc_cat=109&_nc_sid=d4cf07&_nc_eui2=AeEn4EAotO8H1-3vH5XhYKWJdWQ5fAs5ngF1ZDl8CzmeAZ7mwZz9a_0JpDR8crPDbAl4GB1_aUYSJLYExKekf2kr&_nc_ohc=gIsgwmobf2MAX_Ccf-U&_nc_ht=scontent.fbkk10-1.fna&oh=6ec0f61d1ce95045c0c69a7d60072c40&oe=5F4626B3"></v-img>
-        <v-list-item-title class="headline mb-1">Sarawut R.</v-list-item-title>
-        <v-list-item-subtitle>Yed Master<br>Yed expert<br>agoda premium</v-list-item-subtitle>
-      </v-list-item-content>
+    <v-card-title dark>
       
-      <v-list-item-avatar
-        tile
-        size="80"
-        color="grey"
-      ></v-list-item-avatar>
-    </v-list-item>
+    <img src="../store/logo.png" width="30" height="30"> <h3  id="inspire" class="myFont" dark>LUNGSCAN</h3>
+    <v-spacer> </v-spacer>
+     <nuxt-link to="/ProfileView"> <v-btn rounded color="#D60000" id="inspire" class="myFont" >View Profile</v-btn></nuxt-link>  
+      
+    </v-card-title>
+ <v-divider class="my-3"></v-divider>
+ <div  align="center"
+      justify="center">
+<v-container></v-container><v-container></v-container>
 
-    <v-card-actions>
-     <nuxt-link to="/Screen"> <v-btn  color="#3E6896" dark>Lung Screen</v-btn></nuxt-link><br>
-    </v-card-actions>
-    <v-card-actions>
-    <nuxt-link to="/History"> <v-btn  color="#A32E2E" dark>History</v-btn></nuxt-link>
-    </v-card-actions>
-  </v-card>
-  <!-- </v-col > -->
+ <v-container>
+   <v-img
+      class="img-center"
+      height="150px"
+      width="150px"
+      src="https://cdn.discordapp.com/attachments/678634511214313493/737600952722522133/logo.png"
+    >
+    
+       </v-img> 
+       <v-container></v-container>
+       
+       <v-container>
+         
+       <nuxt-link to="/Screen"> <v-btn  x-large color="#3E6896" id="inspire" class="myFont" >Lung Screen</v-btn></nuxt-link>  
+       
+       
+        </v-container>  
+ </v-container>
+ <nuxt-link to="/History"> <v-btn x-large color="#3E6896" id="inspire" class="myFont" >History</v-btn></nuxt-link>
+ </div>
+</v-card>
+
+ <v-card
+    
+    width="1200"
+    height="500"
+    
+  >
+    <v-toolbar
+      color="#AD2323"
+      dark
+    >
+     
+
+      <v-spacer /><v-toolbar-title id="inspire" class="myFont"><h2>History</h2></v-toolbar-title><v-spacer />
+
+     
+
+      
+    </v-toolbar>
+
+    <v-container fluid>
+      
+
+  <v-data-table
+     
+    :search="search"
+    :headers="headers"
+    :items="desserts"
+    sort-by="calories"
+    class="elevation-1"
+  >
+    <template v-slot:top >
+      <v-toolbar flat color="white">
+           <v-col cols="3">
+         <v-text-field
+        v-model="search"
+        append-icon="mdi-magnify"
+        label="Search"
+        id="inspire" class="myFont"
+        single-line
+        hide-details
+      ></v-text-field>
+       </v-col>
+        
+        <v-spacer></v-spacer>
+       
+  
+    <p>{{ selected }}</p>
+    <v-checkbox v-model="selected" label="ID" value="John" id="inspire" class="myFont"></v-checkbox>
+    <v-checkbox v-model="selected" label="Date" value="Jacob" id="inspire" class="myFont"></v-checkbox>
+     <v-checkbox v-model="selected" label="First Name" value="Jacob" id="inspire" class="myFont"></v-checkbox>
+      <v-checkbox v-model="selected" label="Last Name" value="Jacob" id="inspire" class="myFont"></v-checkbox>
+       <v-checkbox v-model="selected" label="Detectable" value="Jacob" id="inspire" class="myFont"></v-checkbox>
+        <v-checkbox v-model="selected" label="Not Detectable" value="Jacob" id="inspire" class="myFont"></v-checkbox>
+         <v-checkbox v-model="selected" label="Specialist" value="Jacob" id="inspire" class="myFont"></v-checkbox>
+  
+          
+      </v-toolbar>
+    </template >
+    <template v-slot:item.actions="{ item }"  style="margin:auto">
+      <nuxt-link to="/MoreInfo"> <v-btn  color="#EACB5E" dark >More Info</v-btn></nuxt-link>
+      <nuxt-link to="/Comment"> <v-btn  color="#A32E2E" dark>Manual Comment</v-btn></nuxt-link>
+    
+    </template>
+  
+  </v-data-table>
 
     
-      <v-col style="margin-left:200px" class="d-flex" cols="12" sm="6">
-    <v-layout>
-    <v-flex xs12 sm6 offset-sm3>
-       <v-card
-    class="mx-auto"
-    max-width="800px"
->
-    <v-img
-      src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t1.15752-9/115991964_3909901282357773_5758477914104303027_n.jpg?_nc_cat=103&_nc_sid=b96e70&_nc_eui2=AeErbAf2NwQmSC2dpdm1ThjDtufZNV5t0Qi259k1Xm3RCBvBz4TXo2rZY-d5LCuXLVwhHnixvb1F1Bkxs4TrOwpM&_nc_ohc=5Y7X_RTOlZEAX_xIqyf&_nc_ht=scontent.fbkk10-1.fna&oh=444e22d63494b4265f6ec9f26c40e433&oe=5F469D51"
-      
-    ></v-img>
-
-    <v-card-title>
-      Name : Sarawut Rattanawichien
-    </v-card-title>
-    <v-card-subtitle>
-      Tel: 0925229196<br>
-      Hospital: oyo 460 int place
-  </v-card-subtitle>
-    <v-card-actions>
-      <nuxt-link to="/ProfileEdit"> <v-btn color="#A32E2E" dark>Edit Profile</v-btn></nuxt-link>
-
-      <v-spacer></v-spacer>
-  </v-card-actions>
-      </v-card>
-    </v-flex>
-  </v-layout>
-  </v-col>
-    </v-row>
-
-</div>
-
-</div>
-
-<!-- <Nav />
-<Footer/>
-
-<v-row >
-<v-col class="d-flex" cols="12" sm="6">
-<v-card
-    class="mx-auto"
-    max-width="400"
-    style="margin-left:400px"
-    outlined
-  >
-    <v-list-item three-line>
-      <v-list-item-content>
-        <div class="overline mb-4 mx-auto">Profile</div>
-        <v-img src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t1.0-9/16729224_1110358685756307_6038790989887994639_n.jpg?_nc_cat=109&_nc_sid=d4cf07&_nc_eui2=AeEn4EAotO8H1-3vH5XhYKWJdWQ5fAs5ngF1ZDl8CzmeAZ7mwZz9a_0JpDR8crPDbAl4GB1_aUYSJLYExKekf2kr&_nc_ohc=gIsgwmobf2MAX_Ccf-U&_nc_ht=scontent.fbkk10-1.fna&oh=6ec0f61d1ce95045c0c69a7d60072c40&oe=5F4626B3"></v-img>
-        <v-list-item-title class="headline mb-1">Sarawut R.</v-list-item-title>
-        <v-list-item-subtitle>Yed Master<br>Yed expert<br>agoda premium</v-list-item-subtitle>
-      </v-list-item-content>
-      
-      <v-list-item-avatar
-        tile
-        size="80"
-        color="grey"
-      ></v-list-item-avatar>
-    </v-list-item>
-
-    <v-card-actions>
-     <nuxt-link to="/Screen"> <v-btn  color="#3E6896" dark>Lung Screen</v-btn></nuxt-link><br>
-    </v-card-actions>
-    <v-card-actions>
-    <nuxt-link to="/History"> <v-btn  color="#A32E2E" dark>History</v-btn></nuxt-link>
-    </v-card-actions>
+    
+    </v-container>
   </v-card>
-  </v-col >
-  <v-col class="d-flex" cols="12" sm="6">
-   <v-card
-    class="mx-auto"
-    max-width="700"
->
-    <v-img
-      src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t1.15752-9/115991964_3909901282357773_5758477914104303027_n.jpg?_nc_cat=103&_nc_sid=b96e70&_nc_eui2=AeErbAf2NwQmSC2dpdm1ThjDtufZNV5t0Qi259k1Xm3RCBvBz4TXo2rZY-d5LCuXLVwhHnixvb1F1Bkxs4TrOwpM&_nc_ohc=5Y7X_RTOlZEAX_xIqyf&_nc_ht=scontent.fbkk10-1.fna&oh=444e22d63494b4265f6ec9f26c40e433&oe=5F469D51"
-      height="200px"
-    ></v-img>
 
-    <v-card-title>
-      Name : Sarawut Rattanawichien
-    </v-card-title>
-    <v-card-subtitle>
-      Tel: 0925229196<br>
-      Hospital: oyo 460 int place
-  </v-card-subtitle>
-    <v-card-actions>
-      <nuxt-link to="/ProfileEdit"> <v-btn  color="#A32E2E" dark>Edit Profile</v-btn></nuxt-link>
-
-      <v-spacer></v-spacer>
-
-      <v-btn
-        icon
-        @click="show = !show"
-      >
-        <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-      </v-btn>
-    </v-card-actions>
-
-    <v-expand-transition>
-      <div v-show="show">
-        <v-divider></v-divider>
-
-        <v-card-text>
-          Our goal is to save pussy.
-        </v-card-text>
-      </div>
-    </v-expand-transition>
-  </v-card>
-  </v-col>
   </v-row>
- 
-   -->
+  </v-container>
 
 
 </div>
@@ -162,7 +132,120 @@
 import Nav from '@/components/Nav'
 
 export default ({
+    computed: {
+      bg () {
+        return this.background ? 'https://cdn.vuetifyjs.com/images/backgrounds/bg-2.jpg' : undefined
+      },
+    },
+  data () {
+      return {
+        selected: ['John'],
+      }
+    },
+data: () => ({
   
+      dialog: false,
+      
+       search: '',
+      headers: [
+        {
+           
+          text: 'Name',
+          align: 'start',
+          sortable: false,
+          value: 'name',
+        },
+        { text: 'Case ID', value: 'caseID' },
+        { text: 'Date', value: 'date' },
+        { text: 'Detect', value: 'detect' },
+        { text: 'Comment', value: 'comment' },
+        { text: 'Actions', value: 'actions', sortable: false },
+      ],
+          
+          }),
+    
+    watch: {
+      dialog (val) {
+        val || this.close()
+      },
+    },
+
+    created () {
+      this.initialize()
+    },
+
+    methods: {
+      initialize () {
+        this.desserts = [
+          {
+            name: 'Sarawut Rattanawichein',
+            caseID: 60130500248,
+            date: "20/10/2020",
+            detect: 'Negative',
+            comment: "-- --",
+          },
+          {
+              name: 'Sarawut Rattanawichein',
+            caseID: 60130500248,
+            date: "20/10/2020",
+            detect: 'Negative',
+            comment: "-- --",
+          },
+          {
+             name: 'Sarawut Rattanawichein',
+            caseID: 60130500248,
+            date: "20/10/2020",
+            detect: 'Negative',
+            comment: "-- --",
+          },
+           {
+             name: 'Sarawut Rattanawichein',
+            caseID: 60130500248,
+            date: "20/10/2020",
+            detect: 'Negative',
+            comment: "-- --",
+          },
+           {
+             name: 'Sarawut Rattanawichein',
+            caseID: 60130500248,
+            date: "20/10/2020",
+            detect: 'Negative',
+            comment: "-- --",
+          },
+          
+        
+      
+        ]
+      },
+
+      editItem (item) {
+        this.editedIndex = this.desserts.indexOf(item)
+        this.editedItem = Object.assign({}, item)
+        this.dialog = true
+      },
+
+      deleteItem (item) {
+        const index = this.desserts.indexOf(item)
+        confirm('Are you sure you want to delete this item?') && this.desserts.splice(index, 1)
+      },
+
+      close () {
+        this.dialog = false
+        this.$nextTick(() => {
+          this.editedItem = Object.assign({}, this.defaultItem)
+          this.editedIndex = -1
+        })
+      },
+
+      save () {
+        if (this.editedIndex > -1) {
+          Object.assign(this.desserts[this.editedIndex], this.editedItem)
+        } else {
+          this.desserts.push(this.editedItem)
+        }
+        this.close()
+      },
+    },
   components: {
     Nav
   },
