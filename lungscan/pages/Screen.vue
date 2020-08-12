@@ -49,7 +49,7 @@
     <v-container>
      <div align="center"
       justify="center" > 
- <v-btn rounded color="#FFFFFF" id="inspire" class="myFont" @click="$refs.inputUpload.click()" >Upload </v-btn>
+ <v-btn rounded color="#FFFFFF" id="inspire" class="myFont" @click="$refs.inputUpload.click()" >Upload <v-icon  dark right>mdi-cloud-upload</v-icon></v-btn>
 <input v-show="false" ref="inputUpload" type="file" @change="yourFunction" >
         </div>
 

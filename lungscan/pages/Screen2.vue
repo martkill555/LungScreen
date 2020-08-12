@@ -122,8 +122,9 @@
 <div align="center"
       justify="center" >
   
-   <nuxt-link to="/Profile"> <v-btn x-large color="#478E00" id="inspire" class="myFont" >Record</v-btn></nuxt-link>
-      <nuxt-link to="/Profile"> <v-btn x-large color="#A32E2E" id="inspire" class="myFont" >Discard</v-btn></nuxt-link>
+   <nuxt-link to="/Profile"> <v-btn x-large color="#478E00" id="inspire" class="myFont" >Record
+      <v-icon dark right>mdi-checkbox-marked-circle</v-icon></v-btn></nuxt-link>
+      <nuxt-link to="/Profile"> <v-btn x-large color="#A32E2E" id="inspire" class="myFont" >Discard<v-icon dark right>mdi-cancel</v-icon></v-btn></nuxt-link>
   
       </div>
 

@@ -2,9 +2,10 @@
   <div id="app">
   <NavBar/>
    <Footer/>
+  
   <style>
 .myFont {
-  font-family:  Impact, Charcoal, sans-serif
+  font-family:  maven pro
 }
 
 </style>
@@ -92,7 +93,7 @@
 
 import Navbar from '@/components/Nav'
 import Footer from '@/components/Footer'
- 
+
 export default ({data () {
       return {
         items: [

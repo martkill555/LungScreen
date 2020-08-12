@@ -26,11 +26,11 @@
    
   
    
-    <nuxt-link to="/ProfileView"> <v-btn text large color="primary" dark>Profile</v-btn> </nuxt-link>
+    <nuxt-link to="/ProfileView"> <v-btn text large color="primary" dark >Profile</v-btn> </nuxt-link> 
     <nuxt-link to="/">  <v-btn text large color="primary" dark>Logout</v-btn></nuxt-link>
     
       
-    </v-btn>
+
     
 
     
@@ -40,3 +40,5 @@
   </v-card>
  </div>
   </template>
+
+  

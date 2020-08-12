@@ -39,7 +39,7 @@
 <v-container></v-container>
 
 <v-container>
- <v-btn rounded x-large color="#3E6896" id="inspire" class="myFont" @click="$refs.inputUpload.click()" dark>Select new image </v-btn>
+ <v-btn rounded x-large color="#3E6896" id="inspire" class="myFont" @click="$refs.inputUpload.click()" dark>Select new image <v-icon dark right>mdi-cloud-upload</v-icon></v-btn>
 <input v-show="false" ref="inputUpload" type="file" @change="yourFunction" >
 </v-container>
         </v-container>

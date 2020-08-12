@@ -2,22 +2,21 @@
 <div >
 <Nav />
 <Footer/>
-
+<div align="center"
+      justify="center">
    <v-card
-    class="mx-auto"
-    width="1600"
-    height="740"
-    style="margin:auto"
-  >
     
-
+    width="1500"
+    height="750"
+    
+  >
     <v-toolbar
-      color="#A32E2E"
+      color="#AD2323"
       dark
     >
      
 
-    <v-spacer />  <v-toolbar-title id="inspire" class="myFont"><h2>History</h2></v-toolbar-title><v-spacer />
+      <v-spacer /><v-toolbar-title id="inspire" class="myFont"><h2>History</h2></v-toolbar-title><v-spacer />
 
      
 
@@ -28,14 +27,14 @@
       
 
   <v-data-table
-      style="margin:auto"
+     
     :search="search"
     :headers="headers"
     :items="desserts"
     sort-by="calories"
     class="elevation-1"
   >
-    <template v-slot:top  style="margin:auto">
+    <template v-slot:top >
       <v-toolbar flat color="white">
            <v-col cols="3">
          <v-text-field
@@ -52,20 +51,20 @@
        
   
     <p>{{ selected }}</p>
-    <v-checkbox v-model="selected" label="ID" value="John" id="inspire" class="myFont"></v-checkbox>
+    <v-checkbox v-model="selected" label="ID" value="John" id="inspire" class="myFont" ></v-checkbox>
     <v-checkbox v-model="selected" label="Date" value="Jacob" id="inspire" class="myFont"></v-checkbox>
-     <v-checkbox v-model="selected" label="First Name" value="Jacob" id="inspire" class="myFont"></v-checkbox>
-      <v-checkbox v-model="selected" label="Last Name" value="Jacob" id="inspire" class="myFont"></v-checkbox>
-       <v-checkbox v-model="selected" label="Detectable" value="Jacob" id="inspire" class="myFont"></v-checkbox>
-        <v-checkbox v-model="selected" label="Not Detectable" value="Jacob" id="inspire" class="myFont"></v-checkbox>
-         <v-checkbox v-model="selected" label="Specialist" value="Jacob" id="inspire" class="myFont"></v-checkbox>
+   <v-checkbox v-model="selected" label="First Name" value="Jacob" id="inspire" class="myFont"></v-checkbox>
+   <v-checkbox v-model="selected" label="Last Name" value="Jacob" id="inspire" class="myFont"></v-checkbox>
+   <v-checkbox v-model="selected" label="Detectable" value="Jacob" id="inspire" class="myFont"></v-checkbox>
+    <v-checkbox v-model="selected" label="Not Detectable" value="Jacob" id="inspire" class="myFont"></v-checkbox>
+     <v-checkbox v-model="selected" label="Specialist" value="Jacob" id="inspire" class="myFont"></v-checkbox>
   
           
       </v-toolbar>
     </template >
     <template v-slot:item.actions="{ item }"  style="margin:auto">
-      <nuxt-link to="/MoreInfo"> <v-btn  color="#EACB5E" dark >More Info</v-btn></nuxt-link>
-      <nuxt-link to="/Comment"> <v-btn  color="#A32E2E" dark>Manual Comment</v-btn></nuxt-link>
+      <nuxt-link to="/MoreInfo"> <v-btn  color="#EACB5E" dark id="inspire" class="myFont">More Info</v-btn></nuxt-link>
+      <nuxt-link to="/Comment"> <v-btn  color="#A32E2E" dark id="inspire" class="myFont">Manual Comment <v-icon dark right>mdi-message-text</v-icon></v-btn></nuxt-link>
     
     </template>
   
@@ -75,6 +74,7 @@
     
     </v-container>
   </v-card>
+  </div>
  
  
 </div>
